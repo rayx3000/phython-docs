@@ -1,0 +1,680 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Python Documentation</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <nav id="navbar">
+        <header class="title-section">Python Documentation</header>
+        <ul>
+          <li>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Recommended_Skills">Recommended Skills</a>
+            </li>
+          <li>
+            <a class="nav-link" href="#Python_And_Other_Programming_Languages">Python And Other Programming Languages</a>
+          </li>
+          <li><a class="nav-link" href="#Your_First_Python_Program">Your First Python Program</a></li>
+          <li>
+            <a class="nav-link" href="#Variables">Variables</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Comments">Comments</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Data_Types">Data Types</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Operators">Operators</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#If_Else_Statement">If Else Statement</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#While_Loops">While Loops</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#For_Loops">For Loops</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Nested_Loops">Nested Loops</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Functions">Functions</a>
+          </li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>Python stands as a versatile, high-level programming language intended for various purposes. Its design philosophy prioritizes the clarity of code, achieved through it use of significant indentation. Python is dynamically typed and features automatic garbage collection. It accommodates diverse programming paradigms, encompassing structured, object-oriented, and functional programming. Referred to as a "batteries included" language, Python is praised for its extensive standard library.</p>
+          <label>It is used for: </label>
+            <ul>
+              <li>web development (server-side),</li>
+              <li>software development,</li>
+              <li>mathematics,</li>
+              <li>system scripting</li>
+            </ul>
+            <label>Programming Paradigms:</label>
+            <ul>
+              <li>Multi-paradigm language</li>
+              <li>Full support for object-oriented and structured programming</li>
+              <li>Additional support for functional and aspect-oriented programming through features like metaprogramming and metaobjects
+              </li>
+              <li>Extension-based support for design by contract and logic programming</li>
+            </ul>
+            <label>Memory Management:</label> 
+           <ul>
+            <li>Dynamic typing</li>
+            <li>Memory management using reference counting and a cycle-detecting garbage collector</li>
+           </ul>
+           </label>Dynamic Features:</label>
+           <ul>
+            <li>Dynamic name resolution (late binding)</li>
+            <li>Supports functional programming with features like filter, map, reduce, list comprehensions, dictionaries, sets, and generator expressions</li>
+           </ul>
+           <label>Functional Programming Support:</label>
+          <ul>
+            <li>Includes modules (itertools and functools) borrowed from Haskell and Standard ML</ul>
+          <label>Core Philosophy (The Zen of Python):</label>
+          <ul>
+            <li>Emphasis on readability, simplicity, and explicitness</li>
+            <li>Modular design for extensibility</li>
+            <li>Favors a single, obvious way of accomplishing tasks over multiple alternatives</li>
+          </ul>
+          <label>Development Principles:</label>
+          <ul>
+            <li>Strives for a simpler, less-cluttered syntax</li>
+            <li>Avoids premature optimization</li>
+            <li>Rejects patches for marginal speed improvements at the expense of clarity</li>
+            <li>Fun-oriented development, reflected in its name and playful approaches in tutorials</li>
+          </ul>
+          <label>Pythonic Code and Culture:</label>
+          <ul>
+            <li>"There should be one—and preferably only one—obvious way to do it" philosophy</li>
+            <li>Emphasis on writing code that is idiomatic, natural, and adheres to Python's minimalist philosophy</li>
+            <li>Use of the term "pythonic" to describe code that follows Python idioms and principles</li>
+            <li>Unpythonic code is characterized by being difficult to understand or resembling a transcription from another language</li>
+          </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Recommended_Skills">
+          <header>Recommended Skills</header>
+          <article>
+            <p>This guide assumes you have the following basic background:</p>
+            <ul>
+              <li>General understanding of programming concepts.</li>
+              <li>Familiarity with basic Python syntax is beneficial.</li>
+              <li>Basic knowledge of computer science principles.</li>
+              <li>Comfortable navigating and using a Python development environment (e.g., IDLE, Jupyter Notebook).</li>
+              <li>Proficiency in basic algebra is recommended.</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Python_And_Other_Programming_Languages">
+          <header>Python And Other Programming Languages</header>
+          <article>
+            <p>Python is a versatile and widely-used programming language known for its simplicity and readability. It supports both object-oriented and procedural programming paradigms. Here are some key features and aspects of Python:</p>
+            <ol>
+              <li>Readability: Python's syntax is designed to be readable and clear. This makes it an excellent choice for beginners and experienced developers alike.</li>
+              <li>Dynamic Typing: Python is dynamically typed, meaning you don't need to specify the data type of a variable explicitly. This can lead to more concise code.</li>
+              <li>Interpreted Language: Python is an interpreted language, which means that the Python code is executed line by line, rather than being compiled into machine code beforehand. This makes development and debugging faster.</li>
+              <li>Extensive Standard Library: Python comes with a vast standard library that includes modules and packages for a wide range of tasks, from working with data structures to handling networking.</li>
+             <li>Community and Ecosystem: Python has a large and active community, which contributes to a rich ecosystem of libraries and frameworks. This includes popular ones like Django and Flask for web development, NumPy and Pandas for data science, and TensorFlow and PyTorch for machine learning.</li>
+             <li>Cross-Platform Compatibility: Python is available on various platforms, including Windows, macOS, and Linux, making it a versatile choice for developing applications that can run on different operating systems.</li>
+             <li>Versatility: Python is used in various domains, including web development, data science, machine learning, artificial intelligence, automation, scripting, and more.
+             </li>
+           </ol>
+           <p>Other programming languages also have their strengths and use cases. Here are a few examples:</p>
+           <ol>
+             <li>JavaScript: Primarily used for web development to create interactive and dynamic content. It's often run in web browsers but can also be used on the server-side (Node.js).
+              </li>
+              <li>Java: A general-purpose, object-oriented language used for building enterprise-level applications, Android apps, and large-scale systems.</li>
+              <li>C++: Known for its performance and used in systems/software development, game development, and applications where high performance is critical.</li>
+              <li>C#: Developed by Microsoft, C# is commonly used for developing Windows applications, games using the Unity game engine, and enterprise software.</li>
+              <li>Ruby: Known for its elegant syntax and used in web development, particularly with the Ruby on Rails framework.</li>
+              <li>Swift: Developed by Apple, Swift is used for building iOS, macOS, watchOS, and tvOS applications</li>
+              <li>Go (Golang): Developed by Google, Go is known for its simplicity and efficiency, making it suitable for systems programming and large-scale distributed systems.</li>
+           </ol>
+          </article>
+         </section>
+         <section class="main-section" id="Your_First_Python_Program"> 
+           <header>Your First Python Program</header>         
+           <article>
+            <p>
+              To get started with Python open your Python IDE(Pycharm, Spyder,etc), and type print("Hi! This is my Program") and here's the code:
+            </p>
+            <code>
+              print("Hi! This is my Program")
+            </code>
+            <p>The output be: Hi! This is my Program, and test it in your Python IDE</p>
+            </article>
+          </section>
+          <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+              <p>In Python, variables are used to store and manipulate data. They act as placeholders that can hold different types of values, such as numbers, strings, lists, or even complex objects. Variables are assigned using the assignment operator '=', and their values can be changed throughout the program.</p>
+              <p>For example if you want store 25 in a variable 'cool' here's the code:</p>
+              <code>cool = 25<br>print(cool)
+              </code>
+              <p>It will be 25 in output</p>
+              <p>For multiple variables assignment it would be like this:</p>
+              <code>
+                first_name = "Vladimir"<br>
+                last_name = "Cortez"<br>
+                age = "25"<br><br>
+                print("Hello!, " + first_name + " " + last_name)<br>
+                print("You are " + age + " years old!")
+              </code>
+              <p>Or this method instead of +:</p>
+              <code>
+                first_name = "Vladimir"<br>
+                last_name = "Cortez"<br>
+                age = "25"<br><br>
+                print(f"Hello! {first_name}  {last_name})<br>
+                print(f"You are {age} years old!")
+              </code>
+              <p>Or this if you want number as int instead of strings:</p>
+              <code>
+                first_name = "Vladimir"<br>
+                last_name = "Cortez"<br>
+                age = "25"<br><br>
+                age = str(age)<br><br>
+                print("Hello!, " + first_name + " " + last_name)<br>
+                print("You are " + age + " years old!")
+              </code>
+              <p>These are the examples of Variables in Python.</p>
+            </article>
+          </section>
+          <section class="main-section" id="Comments">
+            <header>Comments</header>
+            <article> 
+              <p>In Python, comments are used to add explanatory notes or documentation to your code. They are not executed by the interpreter and are purely for human readers.</p>
+              <p>Here's the example of single line comment in Python:</p>
+              <code>
+                <span class="comment_code">//Hello guys this is a simple comment</span><br>
+                print("Hello World!")
+              </code>
+              <p>Here's the example of multi-line comment in Python</p>
+              <code>
+                <span class="comment_code">
+                """<br>
+                Hello guys <br>
+                This is <br>
+                Multi-line <br>
+                comment <br>
+                in Python<br>
+                """<br>
+                print("Hello World!")<br><br>
+              </code>
+             </article> 
+            </section>
+          <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+              <p>In Python, there are several built-in data types that allow you to represent and manipulate different kinds of data. Here are some commonly used data types in Python:</p>
+              <ol>
+                <li>Numeric Types:</li>
+                <ul>
+                  <li>int: Represents integer values like 1, 100, or -42.</li>
+                  <li>float: Represents floating-point numbers with decimal points like 3.14 or -0.5.</li>
+                  <li>complex: Represents complex numbers in the form of a + bj, where a and b are floats or ints.</li>
+                </ul>
+                <li>Sequence Types:</li>
+                <ul>
+                  <li>str: Represents a string of characters, like "Hello, world!" or 'Python'.</li>
+                  <li>list: Represents an ordered collection of items, enclosed in square brackets ([]).</li>
+                  <li>tuple: Represents an ordered and immutable collection of items, enclosed in parentheses (()).</li>
+                </ul>
+                <li>Mapping Type:</li>
+                <ul>
+                  <li>dict: Represents a collection of key-value pairs, enclosed in curly braces ({}) or created using the dict() constructor.</li>
+                </ul>
+                <li>Set Types:</li>
+                <ul>
+                  <li>set: Represents an unordered collection of unique elements, enclosed in curly braces ({}) or created using the set() constructor.</li>
+                  <li>frozenset: Represents an immutable version of a set, created using the frozenset() constructor.
+  </li>
+                </ul>
+                <li>Boolean Type - It represents a boolean value(bool), either True or False.</li>
+                <li>None - Represents the absence of a value or a null value.</li>
+              </ol>
+              <p>These are some of the fundamental data types in Python. Each data type has its own set of operations and functions that can be performed on it. Additionally, Python allows you to create your own custom data types using classes and objects.</p>
+            </article>
+          </section> 
+          <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <article>
+              <p>In Python, there are various types of operators that allow you to perform different operations on variables and values. Here are some commonly used operators in Python:</p>
+              <ol>
+                <li>
+                  <label>Arithmetic Operators:</label>
+                  <ul>
+                    <li>Addition: +</li>
+                    <li>Subtraction: -</li>
+                    <li>Multiplication: *</li>
+                    <li>Division: /</li>
+                    <li>Modulo (Remainder): %</li>
+                    <li>Exponentiation: **</li>
+                    <li>Floor Division: //</li>
+                  </ul>
+                  <p>Examples of Arithmetic Operators in Python:</p>
+                  <code>
+                    # Addition<br>
+                    x = 5 + 3<br>
+                    print(x)  # Output: 8<br>
+                    <br>
+                    # Subtraction<br>
+                    y = 10 - 2<br>
+                    print(y)  # Output: 8<br>
+                    <br>
+                    # Multiplication<br>
+                    z = 4 * 3<br>
+                    print(z)  # Output: 12<br>
+                    <br>
+                    # Division<br>
+                    a = 15 / 4<br>
+                    print(a)  # Output: 3.75<br>
+                    <br>              
+                    # Modulo (Remainder)<br>
+                    b = 17 % 5<br>
+                    print(b)  # Output: 2<br>
+                    <br>
+                    # Exponentiation<br>
+                    c = 2 ** 3<br>
+                    print(c)  # Output: 8<br>
+                    <br>
+                    # Floor Division<br>
+                    d = 15 // 4<br>
+                    print(d)  # Output: 3<br>
+                    <br>
+                </code>
+                <p>These examples demonstrate how arithmetic operators can be used to perform basic mathematical operations in Python. The +, -, *, /, %, **, and // operators respectively represent addition, subtraction, multiplication, division, modulo (remainder), exponentiation, and floor division.</p>
+               </li>
+               <li>
+                <label>Comparison Operators:</label>
+                <ul>
+                  <li>Equal to: ==</li>
+                  <li>Not equal to: !=</li>
+                  <li>Greater than: ></li>
+                  <li>Less than: <</li>
+                  <li>Greater than or equal to: >=</li>
+                  <li>Less than or equal to: <=</li>
+               </ul>
+                <p>Examples of Comparison Operators in Python:</p>
+                <code>
+                  # Equal to (==)<br>
+                  a = 5<br>
+                  b = 5<br>
+                  result_equal = (a == b)<br>
+                  <br>
+                  # Not equal to (!=)<br>
+                  c = 5<br>
+                  d = 10<br>
+                  result_not_equal = (c != d)<br>
+                  <br>
+                  # Greater than (>)<br>
+                  x = 10<br>
+                  y = 5<br>
+                  result_greater_than = (x > y)<br><br>
+  
+                  # Less than (<)<br>
+                  m = 5<br>
+                  n = 10<br>
+                  result_less_than = (m < n)<br><br>
+  
+                  # Greater than or equal to (>=)<br>
+                  p = 15<br>
+                  q = 10<br>
+                  result_greater_than_equal = (p >= q)<br><br>
+  
+                  # Less than or equal to (<=)<br>
+                  r = 5<br>
+                  s = 5<br>
+                  result_less_than_equal = (r <= s)<br><br>
+  
+                  # Print results<br>
+                  print("Equal to:", result_equal)<br>
+                  print("Not equal to:", result_not_equal)<br>
+                  print("Greater than:", result_greater_than)<br>
+                  print("Less than:", result_less_than)<br>
+                  print("Greater than or equal to:", result_greater_than_equal)<br>
+                  print("Less than or equal to:", result_less_than_equal)<br><br>
+                </code>
+                <p>These Examples that explains how Comparison operators works in Python and this code defines variables and performs comparisons using various operators, then prints the results. The result_... variables store the boolean results of the respective comparisons.</p>
+               </li>
+               <li>
+                <label>Assignment Operators:</label>
+                <ul>
+                  <li>Assignment: =</li>
+                  <li>Addition assignment: +=</li>
+                  <li>Subtraction assignment: -=</li>
+                  <li>Multiplication assignment: *=</li>
+                  <li>Division assignment: /=</li>
+                  <li>Modulo assignment: %=</li>
+                  <li>Exponentiation assignment: **=</li>
+                  <li>Floor division assignment: //=</li>
+                </ul>
+                <p>Examples of Assignment Operators in Python:</p>
+                <code>
+                  # Assignment (=)<br>
+                  a = 5<br><br>
+  
+                  # Addition assignment (+=)<br>
+                  b = 10<br>
+                  a += b  # Equivalent to a = a + b<br><br>
+  
+                  # Subtraction assignment (-=)<br>
+                  c = 3<br>
+                  b -= c  # Equivalent to b = b - c<br><br>
+  
+                  # Multiplication assignment (*=)<br>
+                  d = 2<br>
+                  c *= d  # Equivalent to c = c * d<br><br>
+  
+                  # Division assignment (/=)<br>
+                  e = 4<br>
+                  d /= e  # Equivalent to d = d / e <br><br>
+  
+                  # Modulo assignment (%=)<br>
+                  f = 7<br>
+                  e %= f  # Equivalent to e = e % f<br><br>
+  
+                  # Exponentiation assignment (**=)<br>
+                  g = 2<br>
+                  f **= g  # Equivalent to f = f ** g<br><br>
+  
+                  # Floor division assignment (//=)<br>
+                  h = 3<br>
+                  g //= h  # Equivalent to g = g // h<br><br>
+  
+                  # Print results<br>
+                  print("Assignment:", a)<br>
+                  print("Addition assignment:", b)<br>
+                  print("Subtraction assignment:", c)<br>
+                  print("Multiplication assignment:", d)<br>
+                  print("Division assignment:", e)<br>
+                  print("Modulo assignment:", f)<br>
+                  print("Exponentiation assignment:", g)<br>
+                  print("Floor division assignment:", h)<br>
+                  <br>
+                </code>
+                <p>These examples explains how assignment operators works in python and this code demonstrates the use of various assignment operators on different variables and prints the results after each operation.</p>
+               </li>
+               <li>
+                <label>Logical Operators:</label>
+                <ul>
+                  <li>Logical AND: and</li>
+                  <li>Logical OR: or</li>
+                  <li>Logical NOT: not</li>
+                </ul>
+                <p>Examples of Logical Operators in Python:</p>
+                <code>
+                  # and operator<br>
+                  x = 5<br>
+                  y = 10<br>
+                  z = 3<br><br>
+  
+                  print(x > 3 and y < 20)  # Output: True<br>
+                  print(x > 3 and z > 10)  # Output: False<br><br>
+  
+                  # or operator<br>
+                  print(x > 3 or y < 20)   # Output: True<br>
+                  print(x < 3 or z > 10)   # Output: False<br><br>
+  
+                  # not operator<br>
+                  print(not x > 3)          # Output: False<br>
+                  print(not y < 20)         # Output: False<br><br>
+                </code>
+                <p>These explains how Logical Operators in Python, logical operators are used to combine or manipulate boolean values or expressions and this code demonstrates the use of the and, or, and not logical operators in Python. Each section shows examples of how these operators work with different boolean expressions. </p>               
+               </li>
+               <li>
+              <label>Bitwise Operators:</label>
+                <ul>
+                  <li>Bitwise AND: &</li>
+                  <li>Bitwise OR: |</li>
+                  <li>Bitwise XOR: ^</li>
+                  <li>Bitwise NOT: ~</li>
+                  <li>Left shift: <<</li>
+                  <li>Right shift: >></li>
+                </ul>
+                <code>
+                  # Bitwise AND (&)<br>
+                  a = 5  # 0b0101<br>
+                  b = 3  # 0b0011<br>
+                  result_and = a & b<br><br>
+  
+                  # Bitwise OR (|)<br>
+                  c = 5  # 0b0101<br>
+                  d = 3  # 0b0011<br>
+                  result_or = c | d<br><br>
+  
+                  # Bitwise XOR (^)<br>
+                  e = 5  # 0b0101<br>
+                  f = 3  # 0b0011<br>
+                  result_xor = e ^ f<br><br>
+  
+                  # Bitwise NOT (~)<br>
+                  g = 5  # 0b0101<br>
+                  result_not = ~g<br><br>
+  
+                  # Left shift (<<)<br>
+                  h = 5  # 0b0101<br>
+                  result_left_shift = h << 1<br><br>
+  
+                  # Right shift (>>)<br>
+                  i = 5  # 0b0101<br>
+                  result_right_shift = i >> 1<br><br>
+  
+                  # Print results<br>
+                  print("Bitwise AND:", result_and)<br>
+                  print("Bitwise OR:", result_or)<br>
+                  print("Bitwise XOR:", result_xor)<br>
+                  print("Bitwise NOT:", result_not)<br>
+                  print("Left shift:", result_left_shift)<br>
+                  print("Right shift:", result_right_shift)<br>
+                </code>
+                <p>These explains how Bitwise Operators works in Python and this code demonstrates the use of various bitwise operators in Python. The results are printed for each operation. Note that bitwise operators work on integer values and perform operations bit by bit.</p>
+               </li>
+              </ol>
+              <p>This explains about Operators in Python</p>
+            </article>
+          </section>
+          <section class="main-section" id="If_Else_Statement">
+            <header>If Else Statement</header>
+            <article>
+              <p>The if-else statement is used to execute different blocks of code based on a certain condition.</p>
+              <p>Here's how it works:</p>
+              <ol>
+                <li>The if keyword is used to start the if-else statement, followed by a condition that evaluates to either True or False.</li>
+                <li>If the condition is True, the code block indented under the if statement will be executed.</li>
+                <li>If the condition is False, the code block indented under the else statement will be executed.</li>
+            <p>Here's the example of simple If..else statement in Python</p>
+            </ol>
+            <code>
+              temperature = 25<br><br>
+  
+              if (temperature >= 30):<br>
+                  print("The Temperature is hot!")<br>
+              else:<br>
+                  print("It is not hot!")<br>
+            </code>
+            <p>With else if statement:</p>
+            <code>
+              temperature = 25<br><br>
+  
+              if (temperature >= 32):<br>
+                  print("The Temperature is too hot!")<br>
+              else if(temperature <= 10):<br>
+                  print("The Temperature is too cold")<br>
+              else:><br>
+                  print("The Temperature is warm and good!")<br>
+            </code>
+            <p>You can add more else ifs:</p>
+            <code>
+              temperature = 25<br><br>
+  
+              if (temperature >= 100):<br>
+                  print("The Temperature is very hot!")<br>
+              else if(temperature <= 99 || temperature >= 35):<br>
+                  print("The Temperature is too hot")<br>
+              else if(temperature <= 34 || temperature >= 10):<br>
+                  print("The Temperature is warm!")<br>
+              else if(temperature <= 9 || temperature >= -35):<br>
+                  print("The temperature is too cold")<br>
+              else:<br>
+                  print("The temperature is very cold")<br>
+            </code>
+            <p>Here's the examples of If..else statement in Python. It demonstrates that how if else statement in Python works</p>
+           </article>
+          </section>              
+          <section class="main-section" id="While_Loops">
+            <header>While Loops</header>
+            <article>
+              <p>A while loop is used to repeatedly execute a set of statements as long as a certain condition is true. The loop will continue until the condition becomes false.</p>
+            </article>
+            <p>Here's how it works:</p>
+            <ol>
+              <li>The while keyword is used to start the while loop, followed by a condition that evaluates to either True or False.</li>
+              <li>The code block indented under the while statement will be executed repeatedly as long as the condition is true.</li>
+              <li>After each iteration of the loop, the condition is checked again. If it is still true, the loop continues; otherwise, the loop terminates and the program moves on to the next statement after the loop.</li>
+            </ol>
+            <p>Here's the example of stuck in while loop</p>
+            <code>
+              while(0 == 0):<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;print("HEY!")
+            </code>
+            <p>Simple while loop:</p>
+            <code>
+              count = 0<br><br>
+  
+              while count < 5:<br>
+                  print(count)<br>
+                  count += 1<br><br>
+  
+              print("Loop finished")<br><br>
+            </code>
+            <p>While loop with input</p>
+            <code>
+              name = ""<br><br>
+  
+              while name == "":<br>
+                  name = input("Name: ")<br><br>
+  
+              print("Hello! " + name)<br>
+              print("Program finished")<br>
+            </code>
+            <p>Here's the simple examples of while loops. it demonstrates that example #1 when you stuck at loop, #2 is just simple while loop and #3 is about input, and how while loops works in python</p>
+          </section>
+          <section class="main-section" id="For_Loops">
+            <header>For Loops</header>
+            <article>
+              <p>A for loop is used to iterate over a sequence (such as a list, tuple, or string) or other iterable objects. It allows you to repeatedly execute a block of code for each item in the sequence.</p>
+              <p>Here's how it works:</p>
+              <ol>
+                <li>The for keyword is used to start the for loop, followed by a variable (often called item) that represents each item in the sequence.</li>
+                <li>The in keyword is used to specify the sequence or iterable object over which the loop will iterate.</li>
+                <li>The code block indented under the for statement will be executed for each item in the sequence, with the variable taking the value of each item in successive iterations.</li>
+              </ol>
+              <p>Examples of For loop in Python:</p>
+              <p>Iterate over the list</p>
+              <code>
+                animals = ["Dog", "Cat", "Bear"]<br><br>
+  
+                for animal in animals:<br>
+                    print(animal)<br>
+              </code>
+              <p>Iterate over the string</p>
+              <code>
+                name = "Jay"<br><br>
+  
+                for char in name:<br>
+                    print(char)<br>
+              </code>
+              <p>Iterate over a range</p>
+              <code>
+                for i in range(10):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(i)<br>
+              </code>
+              <p>These are the how For Loops look like and works in Python, Example #1 is iterate over the list in Python by sequence, Example #2 is iterate over the string by each letters in column sequence and Example #3 is iterate over a range in row</p>
+            </article>
+          </section>
+          <section class="main-section" id="Nested_Loops">
+            <header>Nested Loops</header>
+            <article>
+              <p>Nested loops in Python allow you to have one loop inside another loop. This can be useful when you need to perform repetitive tasks that require multiple iterations.</p>
+              <p>Here how it works:</p>
+              <ol>
+                <li>The outer loop is defined using the for keyword, and it iterates over an outer sequence.</li>
+                <li>Inside the outer loop, there is another loop defined using the for keyword, and it iterates over an inner sequence.</li>
+                <li>The code block indented under the inner loop will be executed for each inner_item for each outer_item.</li>
+              </ol>
+              <p>Examples of nested loop in Python:</p>
+              <p> Nested loops to create a multiplication table</p>
+              <code>
+                for i in range(1, 6):  # Outer loop for the rows<br>
+               &nbsp;&nbsp;&nbsp;&nbsp;for j in range(1, 11):  # Inner loop for the columns<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = i * j<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(f"{i} x {j} = {result}")<br>
+              </code>
+              <p>Repeating Pattern nested loops</p>
+              <code>
+                rows = 5<br>
+                cols = 5<br>
+                character = "*"<br><br>
+  
+                for i in range(rows):<br>
+                &nbsp;&nbsp&nbsp;&nbsp;for j in range(cols):<br>
+                &nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;print(character, end="")<br>
+                &nbsp;&nbsp&nbsp;&nbsp;print()
+              </code>
+              <p>Here's the examples of nested loops in Python and how it is looks like in Python</p>
+            </article>
+          </section>
+          <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+              <p>Python are a way to encapsulate a block of reusable code that can be called and executed multiple times. They help in organizing code, improving modularity, and promoting code reuse.</p>
+  
+              <p>To define a function in Python, you can use the def keyword followed by the function name and parentheses.</p>
+              <p>Here's the examples of basic function in Python:</p>
+              <p>Basic Python Function</p>
+              <code>
+                def greet():<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print("Hello guys!")<br><br>
+      
+                greet()
+              </code>
+              <p>With Variables</p>
+              <code>
+                name = "Jay"<br>
+                age = 20<br><br>
+  
+                def greet(name, age):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;print(f"Hello {name}! You are {age} years old")<br><br>
+                    
+                greet(name, age)    
+              </code>
+              <p>With Return Value:</p>
+              <code>
+                def add(a, b):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return a + b<br><br>
+  
+                result = add(3, 7)<br>
+                print("Answer: " + result)
+              </code>
+              <p>That's it, these are the simple examples of functions in Python and it can be reused many times and blocks of reusable code that perform a specific task. They allow you to organize code into manageable and modular pieces. </p>
+            </article>
+          </section>     
+      </main>
+    </body>
+  </html> 
